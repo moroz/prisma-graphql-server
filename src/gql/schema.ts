@@ -1,6 +1,10 @@
 import gql from "graphql-tag";
 
 const typeDefs = gql`
+  scalar Date
+  scalar DateTime
+  scalar JSON
+
   type Post {
     id: ID!
     createdAt: DateTime!
@@ -28,7 +32,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    posts: [Post!]!
+    users: [User!]!
   }
 `;
 
