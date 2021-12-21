@@ -26,6 +26,10 @@ const typeDefs = gql`
     posts: [Post!]!
     profile: Profile
   }
+
+  type Query {
+    posts: [Post!]!
+  }
 `;
 
 export default typeDefs;
